@@ -19,7 +19,7 @@ const cert2 = {
 }
 
 const cert3 = {
-  img: 'https://sushant.uk/assets/media/personal/certificates/locusParticipant.webp',
+  img: '/locusParticipant.webp',
   title: 'Winner of Plus Two Award In LOCUS 2024 Exhibition',
   date: '2024',
   cat1: 'Robotics',
