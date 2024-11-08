@@ -19,10 +19,10 @@ const cert = [
   },
   {
     id: 3,
-    img: 'cProgrammingWorkshop.webp',
+    img: '/cProgrammingWorkshop.webp',
     title: '7 Days Wrokshop on C-Programming',
     date: '2021',
-    cat: ['Programming'],
+    cat: ['Programming', 'Workshop'],
     desc: "C was the first programming language I learned, starting in 7th grade, though I found it too complex initially and completed it in 8th grade. In 9th grade, I participated in this workshop meant for bachelor's students and secured 2nd place. The coordinators were so impressed that they refunded my enrollment fee and praised my skills. They encouraged my parents to support me in my programming journey.",
   },
   {
@@ -30,7 +30,7 @@ const cert = [
     img: '/locusParticipant.webp',
     title: 'Winner of Plus Two Award In LOCUS 2024 Exhibition',
     date: '2024',
-    cat: ['Programming', 'Robotics'],
+    cat: ['Robotics', 'Designing', 'Electronics'],
     desc: "I created a 5DOF robotic arm, named 'Armikochan,' and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. A local newspaper even featured an article about the project, and my high school shared it on their page. This experience helped me build valuable contacts and gain recognition. (more about this project in 'Works' tab) ",
   }
 ]

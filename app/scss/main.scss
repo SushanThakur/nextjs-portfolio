@@ -117,7 +117,7 @@ html{
 
   .hoverEff {
   
-    transition: 0.3s;
+    transition: 0.3s ease;
     &:hover{
       scale: 1.05;
     }

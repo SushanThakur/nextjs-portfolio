@@ -111,7 +111,7 @@ html {
 
 @media screen and (min-width: 600px) {
   .hoverEff {
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
   .hoverEff:hover {
     scale: 1.05;

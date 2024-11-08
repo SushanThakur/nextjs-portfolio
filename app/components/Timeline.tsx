@@ -13,7 +13,7 @@ const edu = [
   {
     id: 2,
     date: "2024",
-    heading: "+2, Science, Computer",
+    heading: "10+2, Science (Computer)",
     inst: "Capital College And Research Center, Koteshwor",
     gpa: "3.33",
     grade: "A",
@@ -58,8 +58,8 @@ function TimelineCard(
   }
 ) {
 
-  const clasName1 = "timeline-start mb-10 md:text-end rounded-md w-[360px] p-4 timeline-box hoverEff origin-right";
-  const clasName2 = "timeline-end mb-10 md:text-end rounded-md w-[360px] p-4 timeline-box hoverEff origin-left";
+  const clasName1 = "timeline-start mb-10 md:text-end rounded-md w-[360px] p-4 pr-8 timeline-box hoverEff origin-right";
+  const clasName2 = "timeline-end mb-10 md:text-start rounded-md w-[360px] p-4 pl-8 timeline-box hoverEff origin-left";
 
   return (
     <>
