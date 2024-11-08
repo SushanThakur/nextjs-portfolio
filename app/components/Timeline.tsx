@@ -36,8 +36,8 @@ export default function Timeline() {
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical w-full">
 
         {edu.map(ed => (
-          <li className="animationAppear">
-            <TimelineCard {...ed} key={ed.id} />
+          <li className="animationAppear" key={ed.id}>
+            <TimelineCard {...ed} />
           </li>
         ))}
 

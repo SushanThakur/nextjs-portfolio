@@ -38,7 +38,6 @@ const cert = [
 function Certificates() {
   return (
     <>
-      {/* <Certficate {...cert1} /> */}
       {cert.map(c => (
         <Certficate {...c} key={c.id} />
       ))}
@@ -52,7 +51,7 @@ function Certficate(
     img: string,
     title: string,
     date: string,
-    cat: String[],
+    cat: string[],
     desc: string,
   }
 ) {
