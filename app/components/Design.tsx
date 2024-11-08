@@ -1,34 +1,38 @@
 import React from 'react';
 
-const des1 = {
-  url: '/kairobyte.png',
-  title: 'Brand Logo',
-  desc: 'Designed this logo for a private company.',
-}
-
-const des2 = {
-  url: '/NPL.png',
-  title: 'Facebook Page Logo',
-  desc: 'Designed this logo for a small facebook page.',
-}
-
-const des3 = {
-  url: '/NTBNSevent.png',
-  title: 'Event Banner Design',
-  desc: 'Designed this banner for a cricket event happening at Pulchowk Campus.',
-}
+const des = [
+  {
+    id: 1,
+    url: '/kairobyte.png',
+    title: 'Brand Logo',
+    desc: 'Designed this logo for a private company.',
+  },
+  {
+    id: 2,
+    url: '/NPL.png',
+    title: 'Facebook Page Logo',
+    desc: 'Designed this logo for a small facebook page.',
+  },
+  {
+    id: 3,
+    url: '/NTBNSevent.png',
+    title: 'Event Banner Design',
+    desc: 'Designed this banner for a cricket event happening at Pulchowk Campus.',
+  },
+]
 
 function Design() {
   return (
     <>
-      <Des {...des1} />
-      <Des {...des2} />
-      <Des {...des3} />
+      {des.map(d => (
+        <Des {...d} key={d.id} />
+      ))}
     </>
   );
 }
 
 function Des(props: {
+  id: number,
   url: string,
   title: string,
   desc: string,

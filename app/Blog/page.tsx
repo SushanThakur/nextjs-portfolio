@@ -16,7 +16,6 @@ function Page() {
           <div className="featured-container">
             {/* Cart Starts */}
             <Cards />
-            <Cards />
             {/* Cart Ends */}
           </div>
         </section>

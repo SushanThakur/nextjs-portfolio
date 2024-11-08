@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Header() {
   return (
     <header className='sticky top-0 z-10 w-screen bg-white flex items-center justify-center'>
-      <div className="navbar bg-base-100 max-w-[1600px]">
+      <div className="navbar bg-base-100 max-w-[1600px] lg:px-8">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

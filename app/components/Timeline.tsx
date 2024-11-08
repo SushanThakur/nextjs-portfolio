@@ -1,43 +1,46 @@
 import React from 'react';
 
-const edu1 = {
-  id: 1,
-  date: "2022",
-  heading: "Secondary Education Examination (SEE)",
-  inst: "Monastic Sec. Eng. Boarding School, Janakpurdham.",
-  gpa: "3.65",
-  grade: "A+",
-}
-const edu2 = {
-  id: 2,
-  date: "2024",
-  heading: "+2, Science, Computer",
-  inst: "Capital College And Research Center, Koteshwor",
-  gpa: "3.33",
-  grade: "A",
-}
-const edu3 = {
-  id: 3,
-  date: "Expected. 2029",
-  heading: "Electrical Engineering",
-  inst: "Institute of Engineering, Pulchowk",
-  gpa: "-",
-  grade: "-",
-}
+const edu = [
+  {
+    id: 1,
+    date: "2022",
+    heading: "Secondary Education Examination (SEE)",
+    inst: "Monastic Sec. Eng. Boarding School, Janakpurdham.",
+    gpa: "3.65",
+    grade: "A+",
+    passed: true,
+  },
+  {
+    id: 2,
+    date: "2024",
+    heading: "+2, Science, Computer",
+    inst: "Capital College And Research Center, Koteshwor",
+    gpa: "3.33",
+    grade: "A",
+    passed: true,
+  },
+  {
+    id: 3,
+    date: "Expected. 2029",
+    heading: "Electrical Engineering",
+    inst: "Institute of Engineering, Pulchowk",
+    gpa: "",
+    grade: "",
+    passed: false,
+  }
+]
 
 export default function Timeline() {
   return (
     <div className='w-full'>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical w-full">
-        <li className="animationAppear">
-          <TimelineCard {...edu1} />
-        </li>
-        <li className="animationAppear">
-          <TimelineCard {...edu2} />
-        </li>
-        <li className='animationAppear'>
-          <TimelineCard {...edu3} />
-        </li>
+
+        {edu.map(ed => (
+          <li className="animationAppear">
+            <TimelineCard {...ed} key={ed.id} />
+          </li>
+        ))}
+
       </ul>
     </div>
   );
@@ -51,6 +54,7 @@ function TimelineCard(
     inst: string,
     gpa: string,
     grade: string,
+    passed: boolean,
   }
 ) {
 
@@ -76,9 +80,12 @@ function TimelineCard(
         <div className="text-lg font-black">{props.heading}</div>
         {props.inst}
         <br />
-        {props.gpa} GPA | {props.grade}
+        {props.gpa}
+        {(props.gpa) ? 'GPA |' : null}
+        {props.grade}
       </div>
-      <hr />
+
+      {(props.passed) ? <hr className='bg-blue-400' /> : <hr className='' />}
     </>
   );
 }

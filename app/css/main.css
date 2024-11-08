@@ -128,11 +128,13 @@ html {
   }
 }
 .skill-table-container img {
-  max-width: 60px;
+  max-height: 40px;
+  aspect-ratio: unset;
   display: inline;
-  margin: 4px 0 0 4px;
-  transition: 0.2s;
+  margin: 4px 0 0 1rem;
+  transition: 0.2s ease;
 }
 .skill-table-container img:hover {
-  scale: 1.1;
+  scale: 1.5;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -40,7 +40,7 @@ export default function Page() {
       setEmail("");
       setMessage("");
 
-      alert("Message Sent Sucessfully!! \nI will try my best to follow up in next 24hrs. :)\n");
+      alert("Message sent successfully! \nI will try my best to follow up within the next 24 hours. :)");
     }
   };
 

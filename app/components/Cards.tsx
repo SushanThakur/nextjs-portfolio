@@ -1,19 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 
-const postCard = {
-  title: "Getting Started With ROS 2: A Beginner's Guide",
-  author: "Sushant Thakur",
-  date: "Sep 24 2024",
-  shortDesc: "Robotics is evolving rapidly, and with the rise of powerful open-source tools like ROS (Robot Operating System), it's easier than ever to develop and control robots.",
-}
+const blog = [
+  {
+    id: 1,
+    title: "Getting Started With ROS 2: A Beginner's Guide",
+    author: "Sushant Thakur",
+    date: "Sep 24 2024",
+    shortDesc: "Robotics is evolving rapidly, and with the rise of powerful open-source tools like ROS (Robot Operating System), it's easier than ever to develop and control robots.",
+    link: "/",
+  }
+]
 
 function Cards() {
   return (
     <>
-      <Card {...postCard} />
-      <Card {...postCard} />
-      <Card {...postCard} />
+      {blog.map(b => (
+        <Card {...b} key={b.id} />
+      ))}
     </>
   )
 }
@@ -24,6 +28,7 @@ function Card(
     author: string,
     date: string,
     shortDesc: string,
+    link: string,
   }
 ) {
   return (

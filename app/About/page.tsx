@@ -5,15 +5,6 @@ import Timeline from '../components/Timeline';
 import Skills from '../components/Skills';
 import Footer from '../components/Footer';
 
-const cert1 = {
-  img: 'https://sushant.uk/assets/media/personal/certificates/locusParticipant.webp',
-  title: 'Winner of Plus Two Award In LOCUS 2024 Exhibition',
-  date: '2024',
-  cat1: 'Robotics',
-  cat2: 'Programming',
-  desc: "I created a 5DOF robotic arm, named 'Armikochan,' and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. A local newspaper even featured an article about the project, and my high school shared it on their page. This experience helped me build valuable contacts and gain recognition. (more about this project in 'Works' tab) ",
-}
-
 function Page() {
   return (
     <div>
