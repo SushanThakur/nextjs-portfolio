@@ -81,7 +81,7 @@ function Certficate(
             src={props.img}
             alt={props.title} />
         </figure>
-        <div className="card-body px-0">
+        <div className="card-body px-0 py-2 ">
           <h2 className="card-title">
             {props.title}
           </h2>

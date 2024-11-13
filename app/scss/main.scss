@@ -117,10 +117,10 @@ html{
 
   .hoverEff {
   
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
+
     &:hover{
-      scale: 1.05;
-      backdrop-filter: blur(8px);
+      transform: scale(1.05);
     }
   }
 }
