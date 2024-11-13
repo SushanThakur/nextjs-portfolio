@@ -89,8 +89,7 @@ function Certficate(
         </h2>
         <div className="card-actions justify-end">
           {props.cat.map((c, index) => (
-
-            <div className="badge badge-outline">{c}</div>
+            <div className="badge badge-outline" key={index}>{c}</div>
           ))}
           <div className="badge badge-secondary bg-slate-900 border-slate-900 font-bold">{props.date}</div>
         </div>
