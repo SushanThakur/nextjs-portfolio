@@ -7,7 +7,7 @@ const cert = [
     title: 'Introduction to Cybersecurity by CISCO',
     date: '2020',
     cat: ['CyberSecurity'],
-    desc: "I completed the 'Introduction to Cybersecurity' course through the Cisco Networking Academy program on September 22, 2020. This achievement was an essential step in expanding my knowledge of cybersecurity. The course provided me with foundational skills in cybersecurity concepts, which has strengthened my understanding of protecting information and networks in an increasingly digital world.",
+    desc: "I completed the 'Introduction to Cybersecurity' course through the Cisco Networking Academy program on September 22, 2020. This achievement was an essential step in expanding my knowledge of cybersecurity. The course provided me with foundational skills in cybersecurity concepts, strengthening my understanding of how to protect information and networks in an increasingly digital world.",
   },
   {
     id: 2,
@@ -15,25 +15,43 @@ const cert = [
     title: 'Python Bootcamp 2021',
     date: '2021',
     cat: ['Programming'],
-    desc: "I completed this course while I was in 9th grade, which was a significant milestone for me. Since I was already familiar with C-Programming concepts, learning Python became much easier for me. This prior knowledge not only accelerated my learning but also allowed me to appreciate Python’s simplicity and flexibility in comparison to C. ",
+    desc: "I completed this course while I was in 9th grade, which was a significant milestone for me. Since I was already familiar with C programming concepts, learning Python became much easier. This prior knowledge not only accelerated my learning but also allowed me to appreciate Python’s simplicity and flexibility compared to C.",
   },
   {
     id: 3,
     img: '/cProgrammingWorkshop.webp',
-    title: '7 Days Wrokshop on C-Programming',
+    title: '7-Day Workshop on C Programming',
     date: '2021',
     cat: ['Programming', 'Workshop'],
-    desc: "C was the first programming language I learned, starting in 7th grade, though I found it too complex initially and completed it in 8th grade. In 9th grade, I participated in this workshop meant for bachelor's students and secured 2nd place. The coordinators were so impressed that they refunded my enrollment fee and praised my skills. They encouraged my parents to support me in my programming journey.",
+    desc: "C was the first programming language I learned, starting in 7th grade, though I initially found it complex and completed it in 8th grade. In 9th grade, I participated in this workshop, which was intended for bachelor's students, and secured 2nd place. The coordinators were so impressed that they refunded my enrollment fee and praised my skills, encouraging my parents to support me in my programming journey.",
   },
   {
     id: 4,
     img: '/locusParticipant.webp',
-    title: 'Winner of Plus Two Award In LOCUS 2024 Exhibition',
+    title: 'Winner of Plus Two Award in LOCUS 2024 Exhibition',
     date: '2024',
     cat: ['Robotics', 'Designing', 'Electronics'],
-    desc: "I created a 5DOF robotic arm, named 'Armikochan,' and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. A local newspaper even featured an article about the project, and my high school shared it on their page. This experience helped me build valuable contacts and gain recognition. (more about this project in 'Works' tab) ",
+    desc: "I created a 5DOF robotic arm named \"Armikochan\" and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. A local newspaper even featured an article about the project, and my high school shared it on their page. This experience helped me build valuable contacts and gain recognition. (Further details about this project are available in the \"Works\" tab.)",
+  },
+  {
+    id: 5,
+    img: '/mechTrixWinner.webp',
+    title: 'Winner of Plus Two Award in MechTRIX 2080 Event',
+    date: '2024',
+    cat: ['Robotics', 'Designing', 'Electronics'],
+    desc: "I developed a 5DOF robotic arm named \"Armikochan,\" which I presented at the high school-level project demonstration of MechTRIX 2080, organized by SOMAES, IOE Pulchowk Campus, where I won first place. This project received positive feedback from attendees. (Further details about this project are available in the \"Works\" tab.)",
+  },
+  {
+    id: 6,
+    img: '/reactjs.jpg',
+    title: 'React JS - Complete Guide for Frontend Web Development',
+    date: '2024',
+    cat: ['Web Development', 'Frontend', 'ReactJS'],
+    desc: "I completed the 'React JS - Complete Guide for Frontend Web Development' course on November 10, 2024, through Udemy, under the guidance of instructors EdYoda for Business, Qaifi Khan, and Mavludin Abdulkadirov. This course deepened my knowledge of React JS and strengthened my frontend web development skills, equipping me to create dynamic, responsive web applications.",
   }
-]
+
+];
+
 
 function Certificates() {
   return (
@@ -57,7 +75,7 @@ function Certficate(
 ) {
   return (
     <div>
-      <div className="card bg-cyan-200 w-96 h-[640px] shadow-xl p-4 rounded-none hoverEff animationAppear">
+      <div className="card bg-cyan-200 w-96 h-[640px] shadow-xl p-4 rounded-none hoverEff animationAppear ">
         <figure>
           <img
             src={props.img}
@@ -75,12 +93,13 @@ function Certficate(
             ))}
 
           </div>
-          <p>
+          <p className='max-h-[220px]'>
             {props.desc}
           </p>
         </div>
       </div>
     </div>
+
   );
 }
 

@@ -58,8 +58,8 @@ function TimelineCard(
   }
 ) {
 
-  const clasName1 = "timeline-start mb-10 md:text-end rounded-md w-[360px] p-4 pr-8 timeline-box hoverEff origin-right";
-  const clasName2 = "timeline-end mb-10 md:text-start rounded-md w-[360px] p-4 pl-8 timeline-box hoverEff origin-left";
+  const clasName1 = "timeline-start mb-10 md:text-end rounded-md w-[360px] p-4 md:pr-8 timeline-box hoverEff origin-right";
+  const clasName2 = "timeline-end mb-10 md:text-start rounded-md w-[360px] p-4 md:pl-8 timeline-box hoverEff origin-left";
 
   return (
     <>
