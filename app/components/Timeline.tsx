@@ -80,9 +80,9 @@ function TimelineCard(
         <div className="text-lg font-black">{props.heading}</div>
         {props.inst}
         <br />
-        {props.gpa}
-        {(props.gpa) ? 'GPA |' : null}
-        {props.grade}
+        <span className='font-bold'>{props.gpa}</span>
+        {(props.gpa) ? ' GPA | ' : null}
+        <span className='font-bold'>{props.grade}</span>
       </div>
 
       {(props.passed) ? <hr className='bg-blue-400' /> : <hr className='' />}

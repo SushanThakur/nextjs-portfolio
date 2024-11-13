@@ -31,7 +31,7 @@ const cert = [
     title: 'Winner of Plus Two Award in LOCUS 2024 Exhibition',
     date: '2024',
     cat: ['Robotics', 'Designing', 'Electronics'],
-    desc: "I created a 5DOF robotic arm named \"Armikochan\" and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. A local newspaper even featured an article about the project, and my high school shared it on their page. This experience helped me build valuable contacts and gain recognition. (Further details about this project are available in the \"Works\" tab.)",
+    desc: "I created a 5DOF robotic arm named \"Armikochan\" and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. This experience helped me build valuable contacts and gain recognition. (Further details about this project are available in the \"Works\" tab.)",
   },
   {
     id: 5,
@@ -46,8 +46,8 @@ const cert = [
     img: '/reactjs.jpg',
     title: 'React JS - Complete Guide for Frontend Web Development',
     date: '2024',
-    cat: ['Web Development', 'Frontend', 'ReactJS'],
-    desc: "I completed the 'React JS - Complete Guide for Frontend Web Development' course on November 10, 2024, through Udemy, under the guidance of instructors EdYoda for Business, Qaifi Khan, and Mavludin Abdulkadirov. This course deepened my knowledge of React JS and strengthened my frontend web development skills, equipping me to create dynamic, responsive web applications.",
+    cat: ['Web Dev', 'Frontend', 'ReactJS'],
+    desc: "I completed the 'React JS - Complete Guide for Frontend Web Development' course on November 10, 2024, through Udemy. This course deepened my knowledge of React JS and strengthened my frontend web development skills, equipping me to create dynamic, responsive web applications.",
   }
 
 ];
@@ -75,7 +75,7 @@ function Certficate(
 ) {
   return (
     <div>
-      <div className="card bg-cyan-200 w-96 h-[640px] shadow-xl p-4 rounded-none hoverEff animationAppear ">
+      <div className="card bg-cyan-200 sm:w-96 h-[640px] shadow-xl p-4 rounded-none hoverEff animationAppear w-82 ">
         <figure>
           <img
             src={props.img}
