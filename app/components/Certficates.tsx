@@ -74,29 +74,27 @@ function Certficate(
   }
 ) {
   return (
-    <div>
-      <div className="card bg-cyan-200 sm:w-96 h-[640px] shadow-xl p-4 rounded-none hoverEff animationAppear w-82 ">
-        <figure>
-          <img
-            src={props.img}
-            alt={props.title} />
-        </figure>
-        <div className="card-body px-0 py-2 ">
-          <h2 className="card-title">
-            {props.title}
-          </h2>
-          <div className="card-actions justify-end">
-            <div className="badge badge-secondary bg-slate-900 border-slate-900 font-bold">{props.date}</div>
 
-            {props.cat.map((ct, i) => (
-              <div className="badge badge-outline" key={i}>{ct}</div>
-            ))}
+    <div className="card bg-cyan-200 w-96 shadow-xl rounded-none h-[640px] hoverEff animationAppear w-82 p-2">
+      <figure className='min-h-[200px]'>
+        <img
+          src={props.img}
+          alt={props.title}
+          className='h-full'
+        />
+      </figure>
+      <div className="card-body p-2 ">
+        <h2 className="card-title p-0">
+          {props.title}
+        </h2>
+        <div className="card-actions justify-end">
+          {props.cat.map((c, index) => (
 
-          </div>
-          <p className='max-h-[220px]'>
-            {props.desc}
-          </p>
+            <div className="badge badge-outline">{c}</div>
+          ))}
+          <div className="badge badge-secondary bg-slate-900 border-slate-900 font-bold">{props.date}</div>
         </div>
+        <p>{props.desc}</p>
       </div>
     </div>
 

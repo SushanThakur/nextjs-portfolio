@@ -19,7 +19,7 @@ export default function Home() {
             </div>
           </div>
           <section className="text-center flex flex-col items-center gap-4 max-w-[94vw] sm:text-left sm:items-start sm:max-w-[600px] lg:max-w-[800px]">
-            <h1 className="text-3xl font-bold">Hi, I am Sushant, <br className="hidden sm:flex" />
+            <h1 className="text-3xl font-bold">Hi, I am Sushant Thakur, <br className="hidden sm:flex" />
               Electrical Engineering Student.
             </h1>
             <p className="">

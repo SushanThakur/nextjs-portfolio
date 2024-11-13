@@ -36,7 +36,7 @@ export default function Timeline() {
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical w-full">
 
         {edu.map(ed => (
-          <li className="animationAppear" key={ed.id}>
+          <li className="animationAppearTimeline" key={ed.id}>
             <TimelineCard {...ed} />
           </li>
         ))}
@@ -77,7 +77,7 @@ function TimelineCard(
       </div>
       <div className={(props.id % 2) !== 0 ? clasName1 : clasName2}>
         <time className="font-mono italic">{props.date}</time>
-        <div className="text-lg font-black">{props.heading}</div>
+        <div className="text-lg font-bold">{props.heading}</div>
         {props.inst}
         <br />
         <span className='font-bold'>{props.gpa}</span>
