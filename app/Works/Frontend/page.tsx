@@ -9,13 +9,11 @@ function Page() {
 
       <Header />
 
-      <div className="section-container">
+      <div className="section-container py-10">
         <section className="section">
 
-          <nav className="section-nav">
-            <h1 className='font-semibold'>
-              Work Related to Frontend Web Dev
-            </h1>
+          <nav>
+            <h1 className="font-semibold">My works as Frontend Developer</h1>
           </nav>
 
           <Frontend />

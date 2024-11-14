@@ -75,7 +75,7 @@ function Certficate(
 ) {
   return (
 
-    <div className="card bg-cyan-200 w-96 shadow-xl rounded-none h-[640px] hoverEff animationAppear w-82 p-2">
+    <div className="card bg-[#33d9b2] w-96 shadow-xl rounded-none h-[640px] hoverEff animationAppear w-82 p-2">
       <figure className='min-h-[200px]'>
         <img
           src={props.img}
@@ -89,7 +89,7 @@ function Certficate(
         </h2>
         <div className="card-actions justify-end">
           {props.cat.map((c, index) => (
-            <div className="badge badge-outline" key={index}>{c}</div>
+            <div className="badge badge-outline badge-neutral bg-gray-100 border-gray-100" key={index}>{c}</div>
           ))}
           <div className="badge badge-secondary bg-slate-900 border-slate-900 font-bold">{props.date}</div>
         </div>

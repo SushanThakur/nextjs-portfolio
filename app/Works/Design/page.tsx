@@ -10,8 +10,8 @@ function Page() {
       <Header />
       <div className="section-container py-10">
         <section className="section">
-          <nav className="font-semibold">
-            <h2>Featured Designs </h2>
+          <nav>
+            <h1 className="font-semibold">Featured Designs </h1>
           </nav>
           <div className="featured-container">
             {/* Cart Starts */}

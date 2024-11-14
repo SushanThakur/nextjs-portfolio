@@ -8,7 +8,7 @@ function Page() {
     <div>
       <Header />
 
-      <div className="section-container">
+      <div className="section-container py-10">
         <section className="section">
           <nav>
             <h1 className='font-semibold'>Robotics Projects</h1>

@@ -11,9 +11,9 @@ function Page() {
 
       <Header />
 
-      <div className="section-container">
+      <div className="section-container py-10">
         <section className="section">
-          <nav>Design</nav>
+          <nav className='font-bold'>Design</nav>
           <div className="featured-container">
             <Design />
           </div>

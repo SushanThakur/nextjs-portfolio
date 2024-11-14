@@ -13,7 +13,7 @@ function Page() {
       <div className="section-container">
         <section className="section">
           <nav className="font-semibold">
-            <h1 className='text-3xl'>Sushant Thakur</h1>
+            <h1 className='text-3xl mt-10'>Sushant Thakur</h1>
           </nav>
           <div className='leftAlign'>
             <h2>About</h2>

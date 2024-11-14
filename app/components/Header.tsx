@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <header className='sticky top-0 z-10 w-screen bg-white flex items-center justify-center'>
-      <div className="navbar bg-base-100 max-w-[1600px] lg:px-8">
+    <header className='sticky top-0 z-10 w-screen bg-white flex items-center justify-center font-semibold '>
+      <div className="navbar bg-white max-w-[1600px] sm:pr-8 pr-4 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,7 +57,7 @@ function Header() {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link href="/Contact" className="btn">
+          <Link href="/Contact" className="btn bg-red-400 hover:bg-red-500 border-none text-white">
             Contact
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
