@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
 
       <main className="flex flex-col justify-center items-center gap-[10vh]">
-        <div className="flex flex-col min-h-[50vh] gap-8 justify-center mt-16 items-center sm:flex-row-reverse sm:max-w-[80vw] sm:justify-center lg:w-[80vw] lg:justify-between lg:max-w-[1400px]">
-          <img src='/undraw_firmware_re_fgdy.svg' alt="Sushant Thakur Display Picture" className="sm:w-[30vw] max-w-[340px] w-[80vw]" />
+        <div className="flex flex-col min-h-[50vh] gap-8 justify-center mt-16 items-center md:flex-row-reverse sm:max-w-[80vw] md:justify-center lg:w-[80vw] lg:justify-between lg:max-w-[1400px]">
+          <img src='/undraw_firmware_re_fgdy.svg' alt="Vector Mock Up Picture" className="sm:w-[30vw] max-w-[340px] w-[80vw]" />
           {/* <div className="avatar"> */}
           {/* <div className="sm:w-[52vw] max-w-[340px] w-[20vw]"> */}
           {/* <img src='/pfp.jpg' alt="Sushant Thakur Display Picture" className="hoverEff" /> */}
@@ -42,9 +42,12 @@ export default function Home() {
             </form>
           </section>
         </div>
-
-        {/* <img src="/stick-man-ills-svg.png" alt="stick man illustration" className="h-[80px] translate-y-20 " /> */}
         <div className="section-container bg-[#f7f1e3] py-10 pb-20">
+          {/* robotic arm gif */}
+          {/* <div className="w-full flex justify-end max-w-[1200px] absolute z-10">
+            <img src="/machine-animation.gif" alt="robotic arm" className="h-[30vh] max-h-[180px]" />
+          </div> */}
+
           <section className="section">
             <nav className="font-semibold">
               <h2>Featured Posts</h2>

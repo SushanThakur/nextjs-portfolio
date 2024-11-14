@@ -106,14 +106,14 @@ html{
 }
 
 .animationAppear{
-  animation: appearLeft linear;
+  animation: appearLeft 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
 
 .animationAppearTimeline{
   transform-origin: bottom;
-  animation: appearTime linear;
+  animation: appearTime 1s ease-in-out;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
@@ -132,21 +132,52 @@ html{
 
 
 @keyframes appearLeft {
-  from {
-      opacity: 0;
-      transform: scale(0.7) translateY(100px) rotateY(90deg);
-      transform-origin: bottom;
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(50px) rotateY(60deg);
+    transform-origin: bottom;
   }
-  to {
-      opacity: 1;
-      transform: scale(1) translateX(0) rotateY(0deg);
+  50% {
+    opacity: 0.5;
+    transform: scale(1) translateY(20px) rotateY(15deg);
+  }
+  80% {
+    opacity: 0.8;
+    transform: scale(1) translateY(0) rotateY(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotateY(0deg);
+  }
+}
+
+@keyframes genieMinimize {
+  0% {
+    transform: scale(1) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9, 0.8) translateY(10px) skewY(2deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(0.7, 0.5) translateY(20px) skewY(5deg);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale(0.5, 0.2) translateY(30px) skewY(10deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.2, 0) translateY(40px) skewY(20deg);
+    opacity: 0;
   }
 }
 
 @keyframes appearTime {
   from {
       opacity: 0;
-      transform: scale(0.5) translateY(100px);
+      transform: scale(0.9) translateY(60px);
   }
   to {
       opacity: 1;
