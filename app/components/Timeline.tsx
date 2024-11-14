@@ -21,7 +21,7 @@ const edu = [
   },
   {
     id: 3,
-    date: "Expected. 2029",
+    date: "Expected 2029",
     heading: "Electrical Engineering",
     inst: "Institute of Engineering, Pulchowk",
     gpa: "",

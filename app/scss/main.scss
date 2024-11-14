@@ -106,7 +106,7 @@ html{
 }
 
 .animationAppear{
-  animation: appearLeft 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  animation: appearLeft 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
@@ -122,7 +122,8 @@ html{
 
   .hoverEff {
   
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
+    // display: none;
 
     &:hover{
       transform: scale(1.05);
