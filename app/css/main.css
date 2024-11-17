@@ -40,6 +40,14 @@ html {
   align-items: center;
   justify-content: center;
 }
+.section-container .mockup-code {
+  overflow: auto;
+  max-width: 94vw;
+  width: 100%;
+}
+.section-container .mockup-code code {
+  margin-right: 1rem;
+}
 .section-container .leftAlign {
   width: 80vw;
   max-width: 1400px;
@@ -47,7 +55,10 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.6rem;
+}
+.section-container .leftAlign ol {
+  width: 100%;
 }
 .section-container .leftAlign h2 {
   font-weight: bold;
