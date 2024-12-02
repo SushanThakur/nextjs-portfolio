@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Design from '../components/Design';
-import Frontend from '../components/Frontend';
+import Frontend from '../components/Web';
 import Robotics from '../components/Robotics';
 
 function Page() {

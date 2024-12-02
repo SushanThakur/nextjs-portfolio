@@ -80,12 +80,12 @@ function Header() {
                 {svg.home()}
                 Home
               </Link></li>
-              <li><Link href="/About">{svg.about()}About</Link></li>
+              <li><Link href="/About">{svg.about()}About Me</Link></li>
               <li>
                 <Link href="/Works">{svg.works()}Works</Link>
                 <ul className="p-2">
                   <li><Link href="/Works/Design">{svg.design()}Design</Link></li>
-                  <li><Link href="/Works/Frontend">{svg.front()}Frontend</Link></li>
+                  <li><Link href="/Works/Web">{svg.front()}Web</Link></li>
                   <li><Link href="/Works/Robotics">{svg.robotics()}Robotics</Link></li>
                 </ul>
               </li>
@@ -102,7 +102,7 @@ function Header() {
             </Link></li>
             <li><Link href="/About">
               {svg.about()}
-              About
+              About Me
             </Link></li>
             <li>
               <details>
@@ -115,9 +115,9 @@ function Header() {
                     {svg.design()}
                     Design
                   </Link></li>
-                  <li><Link href="/Works/Frontend">
+                  <li><Link href="/Works/Web">
                     {svg.front()}
-                    Frontend
+                    Web
                   </Link></li>
                   <li><Link href="/Works/Robotics">
                     {svg.robotics()}
