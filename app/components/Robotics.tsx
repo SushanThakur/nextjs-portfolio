@@ -12,11 +12,11 @@ const robots = [
 
 function Robotics() {
   return (
-    <div>
+    <>
       {robots.map((robo) => (
         <Card {...robo} key={robo.id} />
       ))}
-    </div>
+    </>
   );
 }
 
@@ -25,7 +25,7 @@ const Card = (props: { title: string, desc: string, href: string, img: string })
   const { title, desc, href, img } = props;
 
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-base-100 w-96 h-[520px] shadow-xl hoverEff animationAppear rounded-none">
       <figure>
         <img
           src={img}
@@ -36,7 +36,7 @@ const Card = (props: { title: string, desc: string, href: string, img: string })
         <p>{desc}</p>
         <div className="card-actions justify-end">
           <form action={href}>
-            <button className="btn btn-primary">Learn More</button>
+            <button className="btn btn-primary rounded-none">Learn More</button>
           </form>
         </div>
       </div>

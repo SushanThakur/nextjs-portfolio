@@ -17,7 +17,7 @@ function Page() {
           <div className="featured-container">
             <Design />
           </div>
-          <nav>Frontend</nav>
+          <nav>Web Development</nav>
           <div className="featured-container">
             <Frontend />
           </div>

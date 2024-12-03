@@ -19,11 +19,11 @@ const webWorks = [
 
 function Frontend() {
   return (
-    <div className='grid lg:grid-cols-2 gap-8 grid-cols-1'>
+    <>
       {webWorks.map((work, index) => (
         <Front {...work} key={index} />
       ))}
-    </div>
+    </>
   );
 }
 
@@ -32,7 +32,7 @@ const Front = (props: { id: number, img: string, title: string, desc: string, re
   const { id, img, title, desc, refTo } = props;
 
   return (
-    <div className="card glass w-96 animationAppear hoverEff">
+    <div className="card bg-base-100 w-96 h-[480px] shadow-xl hoverEff animationAppear">
       <figure>
         <img
           src={img}

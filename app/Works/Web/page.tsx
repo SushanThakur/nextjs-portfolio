@@ -13,7 +13,7 @@ function Page() {
         <section className="section">
 
           <nav>
-            <h1 className="font-semibold">My works as Frontend Developer</h1>
+            <h1 className="font-semibold">My works as Web Developer</h1>
           </nav>
 
           <Frontend />
