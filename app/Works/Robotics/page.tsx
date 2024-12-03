@@ -13,7 +13,11 @@ function Page() {
           <nav>
             <h1 className='font-semibold'>Robotics Projects</h1>
           </nav>
-          <Robotics />
+
+          <div className='featured-container'>
+            <Robotics />
+          </div>
+
         </section>
       </div>
 

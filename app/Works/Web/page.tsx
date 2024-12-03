@@ -16,7 +16,10 @@ function Page() {
             <h1 className="font-semibold">My works as Web Developer</h1>
           </nav>
 
-          <Frontend />
+          <div className='featured-container'>
+            <Frontend />
+          </div>
+
 
         </section>
       </div>

@@ -17,11 +17,11 @@ const webWorks = [
   },
 ]
 
-function Frontend() {
+function Web() {
   return (
     <>
-      {webWorks.map((work, index) => (
-        <Front {...work} key={index} />
+      {webWorks.map(work => (
+        <Front {...work} key={work.id} />
       ))}
     </>
   );
@@ -53,4 +53,4 @@ const Front = (props: { id: number, img: string, title: string, desc: string, re
   )
 }
 
-export default Frontend;
+export default Web;

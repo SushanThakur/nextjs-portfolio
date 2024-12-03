@@ -2,8 +2,8 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Design from '../components/Design';
-import Frontend from '../components/Web';
 import Robotics from '../components/Robotics';
+import Web from '../components/Web';
 
 function Page() {
   return (
@@ -17,11 +17,11 @@ function Page() {
           <div className="featured-container">
             <Design />
           </div>
-          <nav>Web Development</nav>
+          <nav className='font-bold'>Web Development</nav>
           <div className="featured-container">
-            <Frontend />
+            <Web />
           </div>
-          <nav>Robotics</nav>
+          <nav className='font-bold'>Robotics</nav>
           <div className="featured-container">
             <Robotics />
           </div>
