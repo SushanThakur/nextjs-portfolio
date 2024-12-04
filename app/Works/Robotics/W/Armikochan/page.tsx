@@ -40,17 +40,23 @@ const Page = () => {
 
             <h2 className="text-xl sm:text-2xl font-semibold mt-5 mb-3 text-blue-700">Some Images & Videos</h2>
 
-            <div className='flex gap-8 overflow-auto max-w-[90vw] h-96'>
+            <div className='flex gap-8 overflow-auto max-w-[90vw] h-96 p-4'>
               <Vid src="/robotics/armikochan/vid1.mp4" />
               <Vid src="/robotics/armikochan/vid2.mp4" />
               <Vid src="/robotics/armikochan/vid3.mp4" />
               <Vid src="/robotics/armikochan/vid4.mp4" />
+              <Vid src="/robotics/armikochan/vid6.mp4" />
               <Vid src="/robotics/armikochan/vid5.mp4" />
+            </div>
+
+            <h2 className="text-xl sm:text-2xl font-semibold mt-5 mb-3 text-blue-700">Timelaps</h2>
+            <div className='flex gap-8 overflow-auto max-w-[90vw] h-80 p-4'>
+              <Vid src="/robotics/armikochan/timelaps.mp4" />
             </div>
 
             <h2 className="text-xl sm:text-2xl font-semibold mt-5 mb-3 text-blue-700">Award Winning Moments</h2>
 
-            <div className='flex gap-8 overflow-auto max-w-[90vw] h-80'>
+            <div className='flex gap-8 overflow-auto max-w-[90vw] h-80 p-4'>
               <Vid src="/robotics/armikochan/award-locus.mp4" />
               <Vid src="/robotics/armikochan/award-mech.mp4" />
             </div>
