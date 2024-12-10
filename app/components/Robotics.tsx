@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const robots = [
   {
@@ -32,7 +33,9 @@ const Card = (props: { title: string, desc: string, href: string, img: string })
           alt={title} />
       </figure>
       <div className="card-body p-4">
-        <h2 className="card-title">{title}</h2>
+        <Link href={href}>
+          <h2 className="card-title">{title}</h2>
+        </Link>
         <p>{desc}</p>
         <div className="card-actions justify-end">
           <form action={href}>

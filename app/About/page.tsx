@@ -27,7 +27,7 @@ function Page() {
               <b>Temporary Address:</b> Mahalaxmi 04, Imadol, Lalitpur <br />
               <b>Nationality:</b> Nepalese
             </p>
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
 
             <Skills />
 

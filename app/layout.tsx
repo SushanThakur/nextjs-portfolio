@@ -4,7 +4,7 @@ import "./css/main.css";
 
 export const metadata: Metadata = {
   title: "Sushant Thakur",
-  description: "Sushant Thakur Portfolio Website",
+  description: "Portfolio Website",
 };
 
 export default function RootLayout({

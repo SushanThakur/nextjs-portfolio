@@ -6,14 +6,14 @@ function Footer() {
     <div className='footer bg-base-300 text-base-content flex justify-center mt-10'>
       <footer className="footer bg-base-300 text-base-content p-10 max-w-[1600px]">
         <nav>
-          <h6 className="footer-title">Services</h6>
-          <Link href="/" className="link link-hover">Design</Link>
-          <Link href="/" className="link link-hover">Frontend Web Development</Link>
-          <Link href="/" className="link link-hover">3D-Modelling</Link>
+          <h6 className="footer-title">Area of interest</h6>
+          <Link href="/Works/Design" className="link link-hover">Design</Link>
+          <Link href="/Works/Web" className="link link-hover">Web Development</Link>
+          <Link href="/Works/Robotics" className="link link-hover">Robotics</Link>
         </nav>
         <nav>
           <h6 className="footer-title">About</h6>
-          <Link href="/About" className="link link-hover">About</Link>
+          <Link href="/About" className="link link-hover">About Me</Link>
           <Link href="/Contact" className="link link-hover">Contact</Link>
           <Link href="/Works" className="link link-hover">Works</Link>
           <Link href="/Blog" className="link link-hover">Blog</Link>

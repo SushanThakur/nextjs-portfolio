@@ -82,16 +82,25 @@ const skills = {
       alt: "photoshop",
       cat: "Others",
     },
-  ],
-  mid: [
     {
-      id: 1,
+      id: 11,
       href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       title: "JavaScript - Programming language for dynamic web content.",
       src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       alt: "javascript",
       cat: "Web",
     },
+    {
+      id: 12,
+      href: "https://reactjs.org/",
+      title: "React - JavaScript library for building user interfaces.",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      alt: "react",
+      cat: "Web",
+    },
+  ],
+  mid: [
+
     {
       id: 2,
       href: "https://firebase.google.com/",
@@ -102,10 +111,10 @@ const skills = {
     },
     {
       id: 3,
-      href: "https://reactjs.org/",
-      title: "React - JavaScript library for building user interfaces.",
-      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      alt: "react",
+      href: "https://tailwindcss.com/",
+      title: "Tailwind - Utility-first CSS framework for web design.",
+      src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      alt: "tailwind",
       cat: "Web",
     },
     {
@@ -164,6 +173,7 @@ const skills = {
       alt: "illustrator",
       cat: "Others",
     },
+
   ],
   low: [
     {
@@ -175,19 +185,19 @@ const skills = {
       cat: "Web",
     },
     {
-      id: 2,
-      href: "https://tailwindcss.com/",
-      title: "Tailwind - Utility-first CSS framework for web design.",
-      src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-      alt: "tailwind",
-      cat: "Web",
-    },
-    {
       id: 3,
       href: "https://nodejs.org",
       title: "Node.js - JavaScript runtime for server-side applications.",
       src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
       alt: "nodejs",
+      cat: "Web",
+    },
+    {
+      id: 2,
+      href: "https://www.java.com",
+      title: "Java - A versatile, object-oriented programming language for building platform-independent applications.",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      alt: "java",
       cat: "Web",
     },
     {
