@@ -1,11 +1,22 @@
+'use client';
+
 import Link from "next/link";
 import Image from "next/image";
 import Header from "./components/Header"
 import Footer from "./components/Footer";
 import Cards from "./components/Cards";
 import Certficates from "./components/Certficates";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const [theme, setTheme] = useState("Light");
+
+  useEffect(
+    () => {
+      console.log(theme);
+    }
+  )
 
   return (
     <div>

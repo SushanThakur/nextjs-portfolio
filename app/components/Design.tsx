@@ -39,7 +39,7 @@ function Des(props: {
 }) {
   return (
     <div className="card bg-base-100 w-96 shadow-xl hoverEff animationAppear">
-      <figure className="px-10 pt-10">
+      {/* <figure className="px-10 pt-10">
         <img
           src={props.url}
           alt={props.title}
@@ -53,7 +53,7 @@ function Des(props: {
         <form action="/Contact">
           <button className="btn btn-primary mt-4">Want Something Similar? </button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }

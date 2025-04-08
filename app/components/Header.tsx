@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const svg = {
@@ -54,6 +56,19 @@ const svg = {
 
 
 function Header() {
+
+  const [theme, setTheme] = useState("Light");
+
+  useEffect(
+    () => {
+      console.log(theme);
+    }, [theme]
+  )
+
+  const handleThemeChange = () => {
+    setTheme(theme == "Light" ? "Dark" : "Light");
+  }
+
   return (
     <header className='sticky top-0 z-10 w-screen bg-white flex items-center justify-center font-semibold '>
       <div className="navbar bg-white max-w-[1600px] sm:pr-8 pr-4 ">
@@ -132,7 +147,7 @@ function Header() {
             </Link></li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end flex flex-row gap-8">
           <Link href="/Contact" className="btn bg-red-400 hover:bg-red-500 border-none text-white">
             Contact
             {svg.contact()}

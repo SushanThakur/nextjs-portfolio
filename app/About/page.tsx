@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 function Page() {
   return (
     <div>
+      {/* <div className='bgline'></div> */}
       <Header />
 
       <div className="section-container">
